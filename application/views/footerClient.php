@@ -4,8 +4,8 @@
 				<h2>Créateur</h2>
 				<ul>
 					<li>RAJAOHARINIAINA Sergio ETU001811</li>
-					<li>RAJAOHARINIAINA Sergio ETU001811</li>
-					<li>RAJAOHARINIAINA Sergio ETU001811</li>
+					<li>RAVALISON Jérémie ETU001891</li>
+					<li>RAZANADAHY Mandresy ETU001910</li>
 				</ul>
 			</div>
 			<div class="service">
@@ -27,7 +27,7 @@
 				<i class="fab fa-whatsapp"></i>
 			</div>
 			<div class="copyright">
-				LOGO © 2023
+				TAKALO © 2023
 			</div>
 		</div>
 	</div>

@@ -22,7 +22,7 @@
 
 		<div class="item-nav"><a href="<?php echo site_url("/ObjetCtrl/mesObjets"); ?>">MES OBJETS</a></div>
 
-		<form action="<?php echo site_url("/searchCtrl/index"); ?>"" method="">
+		<form action="<?php echo site_url("/searchCtrl/index"); ?>" method="get">
 			<div  class="search_bar">
 				<select id="idCat" name="idCat">
 					<option value="" disabled selected hidden>Catégorie</option>
@@ -37,7 +37,7 @@
 			</div>
 		</form>
 
-		<div class="item-nav"><a href="<?php echo site_url("/Disconnect/index"); ?>"><i class="fas fa-user"></i></a></div>
+		<div class="item-nav"><a href="<?php echo site_url("/Disconnect/index"); ?>"><i style="color : red ;">DECONNECTION</i><i class="fas fa-user"></i></a></div>
 
 		<div id="icon_bar">
 		  <span></span>
@@ -48,18 +48,18 @@
 		
 	</div>
 	<div class="secret-nav-bar">
-		
-		<form action="<?php echo site_url(""); ?>" method="">
-			<div class="secret_search_bar">
-				
-				<select id="Categorie" name="Categorie">
+
+	<form action="<?php echo site_url("/searchCtrl/index"); ?>" method="get">
+			<div  class="secret_search_bar">
+				<select id="idCat" name="idCat">
 					<option value="" disabled selected hidden>Catégorie</option>
-		        	<option value="">Vetement</option>
-		        	<option value="">CD</option>
-				</select>		
+		        	<?php for ($i=0; $i < count($dataS) ; $i++) { ?>
+                		<option value="<?php echo $dataS[$i]['id']; ?>"><?php echo $dataS[$i]['nom']; ?></option>
+            		<?php } ?>
+				</select>
 				<div class="box-search-bar">
 					<input type="text" name="search" placeholder="Tapez votre recherche">
-					<i class="fas fa-search"></i>
+					<button type="submit"><i class="fas fa-search" ></i></button>
 				</div>
 			</div>
 		</form>
@@ -74,5 +74,5 @@
 
 		<div class="secret-item-nav"><a href="<?php echo site_url("/ObjetCtrl/mesObjets"); ?>">MES OBJETS</a></div>
 
-		<div class="secret-item-nav"><a href="<?php echo site_url(""); ?>">SE DECONNECTER</i></a></div>
+		<div class="secret-item-nav"><a href="<?php echo site_url("/Disconnect/index"); ?>">SE DECONNECTER</i></a></div>
 	</div>

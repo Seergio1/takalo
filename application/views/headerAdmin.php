@@ -35,5 +35,5 @@
 		
 		<div class="secret-item-nav"><a href="<?php echo site_url("/StatistiqueCtrl/index"); ?>">STATISTIQUES</a></div>
 
-		<div class="secret-item-nav"><a href="#">SE DECONNECTER</i></a></div>
+		<div class="secret-item-nav"><a href="<?php echo site_url("/Disconnect/index"); ?>">SE DECONNECTER</i></a></div>
 	</div>

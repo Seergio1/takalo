@@ -565,7 +565,7 @@ box-shadow: 0px 2px 0.2rem 0px rgba(111, 111, 111 ,32%);
 	align-items: center;
 	margin: 20px auto;
 }
-.item-descri input[type="submit"]{
+.item-descri .btn{
 		padding: 10px 20px;
 		color: white;
 		background: #3b37fe;
@@ -573,8 +573,9 @@ box-shadow: 0px 2px 0.2rem 0px rgba(111, 111, 111 ,32%);
 		border-radius: 8px;
 		font-size:16px;
 		opacity: 0.8;
+		text-decoration: none;
 }
-.item-descri input[type="submit"]:hover{
+.item-descri .btn:hover{
 	opacity: 0.5;
 }
 
